@@ -1,0 +1,25 @@
+[tool.poetry]
+name = "pwai-notion-api-fastapi"
+version = "0.1.0"
+description = ""
+authors = ["mbezard <matthieube@bam.tech>"]
+readme = "README.md"
+packages = [{ include = "pwai_notion_api_fastapi" }]
+
+[tool.poetry.dependencies]
+python = "^3.11"
+fastapi = { extras = ["all"], version = "^0.110.1" }
+loguru = "^0.7.0"
+python-dotenv = "^1.0.1"
+asyncio = "^3.4.3"
+pandas = "^2.2.1"
+notion-client = "^2.2.1"
+
+[tool.poetry.group.dev.dependencies]
+mypy = "^1.2"
+ruff = "^0.1.5"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
